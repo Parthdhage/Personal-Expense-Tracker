@@ -1,0 +1,7 @@
+/vendor/
+.env
+*.log
+.DS_Store
+/uploads/*
+!/uploads/Home-Page.png
+!/uploads/default_profile.png
