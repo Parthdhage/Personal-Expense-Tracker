@@ -1,63 +1,38 @@
 # Personal Expense Tracker
 
-The Expense Tracking Database Management System `DBMS` project is a user-friendly application that allows an unlimited number of users to register, log in, and efficiently manage their personal expenses across diverse categories. Users have the flexibility to add, view, and delete expenses, providing a seamless experience for tracking their financial activities. The system also empowers users to manage expenses by sorting them based on months and categories, facilitating a clear overview of their spending habits. Moreover, the DBMS generates detailed expense reports on a daily, monthly, and yearly basis, assisting users in making informed financial decisions. This project simplifies expense tracking and enhances financial management for users of all backgrounds
+A PHP and MySQL application for recording expenses and reviewing spending by date and category.
 
-## Installation
+## Features
 
-1. **Download and Install XAMPP :**
-   - Go to [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html) and download XAMPP.
+- User registration, login, and profile management
+- Add and manage expense records
+- View expense reports across daily, monthly, and yearly periods
+- Store application data in MySQL
 
-2. **Start XAMPP :**
-   - Open the XAMPP control panel.
-   - Start the Apache and MySQL services.
+## Repository layout
 
-3. **Access `htdocs` Directory :**
-   - In your XAMPP installation directory, navigate to the `htdocs` folder.
-   - This is where you'll place your web projects.
+    index.php                 Application entry point
+    register.php              Account registration
+    login.php                 Authentication
+    add_expense.php           Expense entry
+    manage_expense.php        Expense management
+    expensereport.php         Expense reporting
+    PersonalExpenseTracker.sql Database schema and seed data
+    css/                      Stylesheets and frontend libraries
+    js/                       Browser-side scripts
 
-4. **Fork and Clone the Repository :**
-   - Fork the repository to your GitHub account by clicking the "Fork" button at the top right of the repository page.
-   - Open a terminal or command prompt.
-   - Navigate to the `htdocs` directory in your XAMPP installation folder:
-     ```bash
-     cd /path/to/xampp/htdocs
-     ```
-   - Clone the forked repository from your account:
-     ```bash
-     git clone https://github.com/EbeyJoeRegi/Personal-Expense-Tracker.git
-     ```
+## Run locally
 
-5. **Setting up the Database :**
-   - Open phpMyAdmin by going to `http://localhost/phpmyadmin` in your browser.
-   - Log in using the default credentials ( username: `root`, no password by default ).
-   - Create a new database:
-     - Click on "Databases" in the top menu.
-     - Enter a name for the database - `dailyexpense` and choose the appropriate collation ( usually `utf8_general_ci` ).
-     - Click "Create".
-   - Import the SQL file from the repository:
-     - Click on the newly created database from the left sidebar.
-     - Choose "Import" from the top menu.
-     - Click "Choose File" and select the SQL file provided in the repository.
-     - Click "Go" to import the data into the database.
+Prerequisites: PHP, MySQL, and a local web server. XAMPP is one option.
 
-## Usage
+1. Start Apache and MySQL.
+2. Create a MySQL database and import PersonalExpenseTracker.sql using phpMyAdmin or the MySQL command line.
+3. Set the local database connection values in config.php.
+4. Place the repository under the web server's document root.
+5. Open the project URL in a browser.
 
-1. **Access the Project :**
-   - Open your browser and type `http://localhost/repository-folder-name` to access the project.
-   - Replace `repository-folder-name` with the name of the folder created during the cloning process (By default : `DailyExpense-System`).
-   
-2. **Default Login Credentials**
+Use local credentials that you control. Do not publish passwords, database credentials, or sample user credentials in documentation.
 
-   - Upon accessing the web application for the first time, use the following default login credentials:
-     - **Email** : anjalita@sjec.in
-     - **Password** : asdf1973
+## License
 
-3. **Work on the Project:**
-   - Any changes made within the cloned repository will reflect on the localhost URL (e.g., `http://localhost/DailyExpense-System`).
-   
-4. **Manage XAMPP Services:**
-   - Use the XAMPP control panel to start/stop Apache, MySQL, and other services as needed.
-
----
-
-![Home Page](uploads/Home-Page.png)
+See LICENSE.md for the license supplied with this repository.
